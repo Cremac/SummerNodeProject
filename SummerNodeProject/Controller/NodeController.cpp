@@ -7,10 +7,15 @@
 //
 
 #include "NodeController.h"
+#include "../Model/DataNode.cpp"
+#include <string>
+
+using namespace std;
 
 void NodeController :: tryNodes()
 {
-    
+    DataNode<int> numberNode;
+    DataNode<string> wordNode;
 }
 
 void NodeController:: start()
