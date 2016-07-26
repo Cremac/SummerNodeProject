@@ -19,6 +19,8 @@ private:
     Type nodeData;
     DataNode * nodePointer;
 public:
+    DataNode();
+    DataNode(Type nodeData);
     void setNodeData(Type nodeData);
     Type getNodeData();
     void setNodePointer(DataNode * nodePointer);
