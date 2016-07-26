@@ -24,7 +24,7 @@ public:
     void setNodeData(Type nodeData);
     Type getNodeData();
     void setNodePointer(DataNode * nodePointer);
-    DataNode * getodePointer();
+    DataNode * getNodePointer();
     
 };
 
