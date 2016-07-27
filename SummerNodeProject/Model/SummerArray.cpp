@@ -6,4 +6,4 @@
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
-#include "SummerArray.hpp"
+#include "SummerArray.h"

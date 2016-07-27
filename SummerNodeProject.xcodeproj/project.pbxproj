@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		A42C794F1D4907FD00016E8B /* SummerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SummerArray.cpp; path = Model/SummerArray.cpp; sourceTree = "<group>"; };
-		A42C79501D4907FD00016E8B /* SummerArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SummerArray.hpp; path = Model/SummerArray.hpp; sourceTree = "<group>"; };
+		A42C79501D4907FD00016E8B /* SummerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerArray.h; path = Model/SummerArray.h; sourceTree = "<group>"; };
 		A4FABFA11D47FE0500555FDA /* SummerNodeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SummerNodeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FABFA41D47FE0500555FDA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4FABFAB1D47FF8E00555FDA /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = Model/DataNode.cpp; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				A4FABFAB1D47FF8E00555FDA /* DataNode.cpp */,
 				A4FABFAC1D47FF8E00555FDA /* DataNode.h */,
 				A42C794F1D4907FD00016E8B /* SummerArray.cpp */,
-				A42C79501D4907FD00016E8B /* SummerArray.hpp */,
+				A42C79501D4907FD00016E8B /* SummerArray.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
