@@ -8,6 +8,7 @@
 
 #include "NodeController.h"
 #include "../Model/DataNode.cpp"
+#include "../Model/SummerArray.cpp"
 #include <string>
 #include <iostream>
 

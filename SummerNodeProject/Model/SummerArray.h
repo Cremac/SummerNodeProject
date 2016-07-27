@@ -22,6 +22,7 @@ private:
     DataNode<Type> end;
 public:
     SummerArray(int length);
+    
     Type getFromIndex(int index);
     Type getFirst();
     Type getLast();
