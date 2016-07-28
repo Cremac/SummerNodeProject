@@ -18,10 +18,10 @@ DataNode<Type> ::DataNode()
     
 }
 template <class Type>
-DataNode<Type> :: DataNode(Type nadeData)
+DataNode<Type> :: DataNode(Type nodeData)
 {
     this->nodeData = nodeData;
-    this->nodePnter = nullptr;
+    this->nodePointer = nullptr;
 }
 
 

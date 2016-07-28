@@ -10,7 +10,7 @@
 #define BinaryTree_h
 
 #include <stdio.h>
-#include "BinaryTreeNode.h"
+#include "BinaryTreeNode.cpp"
 
 template<class Type>
 class BinaryTree
@@ -26,6 +26,7 @@ public:
     void postOrderTraversal(BinaryTreeNode<Type> * currentNode);
     int calculateSize();
     bool remove(Type data);
+    BinaryTreeNode<Type>*getRoot();
 };
 
 

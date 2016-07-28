@@ -30,13 +30,13 @@ void BinaryTree<Type>:: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNo
     {
         currentRootNode = insertedNode;
     }
-    else if(insertedNode -> getNodeDate()<currentRootNode->getNodeDate())
+    else if(insertedNode->getNodeData() < currentRootNode->getNodeData())
     {
         insert(insertedNode, currentRootNode->getLeftChild());
     }
-    else if(insertedNode->getNodeData()>currentRootNode->getNodeData())
+    else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
     {
-        insert(insertedNode, currentRootNode -> getRightchild());
+        insert(insertedNode, currentRootNode -> getRightChild());
     }
 }
 
@@ -74,4 +74,10 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
         std::cout << currentNode->getNodeData() << ", ";
 
     }
+}
+
+template<class Type>
+BinaryTreeNode<Type> * BinaryTree<Type> ::getRoot()
+{
+    return root;
 }
