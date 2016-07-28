@@ -17,12 +17,13 @@ class BinaryTree
 {
 private:
     BinaryTreeNode<Type> *root;
+    void insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode);
 public:
     BinaryTree();
     void insert(Type data);
-    void inOrderTraversal();
-    void prerderTraversal();
-    void postOrderTraversal();
+    void inOrderTraversal(BinaryTreeNode<Type> * currentNode);
+    void preOrderTraversal(BinaryTreeNode<Type> * currentNode);
+    void postOrderTraversal(BinaryTreeNode<Type> * currentNode);
     int calculateSize();
     bool remove(Type data);
 };
