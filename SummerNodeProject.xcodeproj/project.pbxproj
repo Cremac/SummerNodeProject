@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A42C79511D4907FD00016E8B /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42C794F1D4907FD00016E8B /* SummerArray.cpp */; };
 		A42C79541D4944A800016E8B /* SummerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42C79521D4944A800016E8B /* SummerList.cpp */; };
+		A4B2565D1D4BA55A00AD7E78 /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B2565B1D4BA55A00AD7E78 /* HashTable.cpp */; };
+		A4B256601D4BAEBF00AD7E78 /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B2565E1D4BAEBF00AD7E78 /* HashNode.cpp */; };
 		A4CA606E1D4A53B9009201AD /* BinaryTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA606C1D4A53B9009201AD /* BinaryTreeNode.cpp */; };
 		A4CA60711D4A699B009201AD /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4CA606F1D4A699B009201AD /* BinaryTree.cpp */; };
 		A4FABFA51D47FE0500555FDA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4FABFA41D47FE0500555FDA /* main.cpp */; };
@@ -33,6 +35,10 @@
 		A42C79501D4907FD00016E8B /* SummerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerArray.h; path = Model/SummerArray.h; sourceTree = "<group>"; };
 		A42C79521D4944A800016E8B /* SummerList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SummerList.cpp; path = Model/SummerList.cpp; sourceTree = "<group>"; };
 		A42C79531D4944A800016E8B /* SummerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerList.h; path = Model/SummerList.h; sourceTree = "<group>"; };
+		A4B2565B1D4BA55A00AD7E78 /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashTable.cpp; path = Model/HashTable.cpp; sourceTree = "<group>"; };
+		A4B2565C1D4BA55A00AD7E78 /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = Model/HashTable.h; sourceTree = "<group>"; };
+		A4B2565E1D4BAEBF00AD7E78 /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashNode.cpp; path = Model/HashNode.cpp; sourceTree = "<group>"; };
+		A4B2565F1D4BAEBF00AD7E78 /* HashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashNode.h; path = Model/HashNode.h; sourceTree = "<group>"; };
 		A4CA606C1D4A53B9009201AD /* BinaryTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryTreeNode.cpp; path = Model/BinaryTreeNode.cpp; sourceTree = "<group>"; };
 		A4CA606D1D4A53B9009201AD /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinaryTreeNode.h; path = Model/BinaryTreeNode.h; sourceTree = "<group>"; };
 		A4CA606F1D4A699B009201AD /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryTree.cpp; path = Model/BinaryTree.cpp; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				A4CA606D1D4A53B9009201AD /* BinaryTreeNode.h */,
 				A4CA606F1D4A699B009201AD /* BinaryTree.cpp */,
 				A4CA60701D4A699B009201AD /* BinaryTree.h */,
+				A4B2565B1D4BA55A00AD7E78 /* HashTable.cpp */,
+				A4B2565C1D4BA55A00AD7E78 /* HashTable.h */,
+				A4B2565E1D4BAEBF00AD7E78 /* HashNode.cpp */,
+				A4B2565F1D4BAEBF00AD7E78 /* HashNode.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -166,8 +176,10 @@
 			files = (
 				A42C79511D4907FD00016E8B /* SummerArray.cpp in Sources */,
 				A4FABFB11D480C9500555FDA /* NodeController.cpp in Sources */,
+				A4B2565D1D4BA55A00AD7E78 /* HashTable.cpp in Sources */,
 				A4CA606E1D4A53B9009201AD /* BinaryTreeNode.cpp in Sources */,
 				A4CA60711D4A699B009201AD /* BinaryTree.cpp in Sources */,
+				A4B256601D4BAEBF00AD7E78 /* HashNode.cpp in Sources */,
 				A4FABFA51D47FE0500555FDA /* main.cpp in Sources */,
 				A42C79541D4944A800016E8B /* SummerList.cpp in Sources */,
 				A4FABFAD1D47FF8E00555FDA /* DataNode.cpp in Sources */,
