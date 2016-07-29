@@ -7,6 +7,10 @@
 //
 
 #include "HashTable.h"
+#include <iostream>
+
+using namespace std;
+
 
 template<class Type>
 HashTable<Type> :: HashTable()
@@ -52,17 +56,17 @@ long HashTable<Type> :: findPosition(Type data)
 {
     long insertedPosition;
     
-    unsigned long address = &data;
+    unsigned long address = (long)&data;
     
     insertedPosition = address % capacity;
-    HashTable<Type>* indexPointer = front;
+    HashNode<Type>* indexPointer = front;
     
     for (long index = 0; index <= insertedPosition; index++)
     {
-        indexPointer - indexPointer->getNode();
+        indexPointer = indexPointer->getNode();
     }
     
-    if(indexPointer->isStuffed())
+    if(indexPointer->hasStuffed())
     {
         insertedPosition = handleCollision(data, insertedPosition);
     }
@@ -84,7 +88,7 @@ long HashTable<Type> :: handleCollision(Type data, long currentPosition)
     
     for (long index = currentPosition + 1; index < capacity && updatedPosition == -1; index++)
     {
-        if (!indexPointer->getStuffed())
+        if (!indexPointer->hasStuffed())
         {
             updatedPosition = index;
         }
@@ -95,7 +99,7 @@ long HashTable<Type> :: handleCollision(Type data, long currentPosition)
         indexPointer = front;
         for (long index = 0; index < currentPosition && updatedPosition == -1; index++)
         {
-            if (!indexPointer->getStuffed())
+            if (!indexPointer->hasStuffed())
             {
                 updatedPosition = index;
             }
@@ -106,8 +110,25 @@ long HashTable<Type> :: handleCollision(Type data, long currentPosition)
     return updatedPosition;
 }
 
+template<class Type>
+void HashTable<Type> :: resize()
+{
+    
+}
 
-
+template<class Type>
+void HashTable<Type> :: displayContents()
+{
+    HashNode<Type> * indexPointer = front;
+    for (long ind ex = 0; index < capacity; index++)
+    {
+        if(indexPointer->hasStuffed())
+        {
+            cout << indexPointer->getData() << " # " << index << endl;
+        }
+        indexPointer = indexPointer->
+    }
+}
 
 
 

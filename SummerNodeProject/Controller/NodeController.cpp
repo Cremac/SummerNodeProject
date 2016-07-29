@@ -10,6 +10,7 @@
 #include "../Model/DataNode.cpp"
 #include "../Model/SummerArray.cpp"
 #include "../Model/BinaryTree.cpp"
+#include "../Model/HashTable.cpp"
 #include <string>
 #include <iostream>
 
@@ -30,6 +31,19 @@ void NodeController :: tryNodes()
 void NodeController :: tryArray()
 {
     SummerArray<int> testArray(3);
+}
+
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    numbersInHash.add(123);
+    numbersInHash.add(345);
+    numbersInHash.add(456);
+    numbersInHash.add(34567);
+    numbersInHash.add(1234345);
+    numbersInHash.add(-345);
+    numbersInHash.add(123);
+    numbersInHash.add(3568356783);
 }
 
 void NodeController:: tryTree()
@@ -63,6 +77,6 @@ void NodeController:: tryTree()
 
 void NodeController:: start()
 {
-    tryTree();
+    tryHash();
 }
 
