@@ -19,7 +19,7 @@ template<class Type>
 HashNode<Type> :: HashNode(Type data)
 {
     this->data = data;
-    isStuffed = false;
+    isStuffed = true;
     nextNode = nullptr;
 }
 
