@@ -23,6 +23,47 @@ HashTable<Type> :: HashTable()
         HashNode<Type> * next = new HashNode<Type>();
         currentEnd->setNode(next);
         currentEnd = next;
-        
     }
+}
+
+template<class Type>
+void HashTable<Type> :: add(Type data)
+{
+    if(((double)size / capacity) >= efficiencyPercentage)
+    {
+        resize();
+    }
+    
+    long position = findPosition(data);
+    
+    HashNode<Type> * indexPointer = front;
+    
+    for(long index = 0; index < position; index++)
+    {
+        indexPointer = indexPointer->getNode();
+    }
+    
+    indexPointer->setData(data);
+    indexPointer->setStuffed(true);
+}
+
+template<class Type>
+long HashTable<Type> :: findPosition(Type data)
+{
+    long insertedPosition;
+    
+    unsigned long address = &data;
+    
+    insertedPosition = address % capacity;
+    HashTable<Type>* indexPointer = front;
+    for (long index = 0; index <= insertedPosition; index++)
+    {
+        indexPointer - indexPointer->getNode();
+    }
+    
+    if(indexPointer->isStuffed())
+    {
+        insertedPosition = handleCollision(data);
+    }
+    return insertedPosition;
 }
